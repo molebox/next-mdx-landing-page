@@ -6,7 +6,7 @@ class MyDocument extends Document {
     return (
       <html lang="en">
         <Head>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet"/>
         </Head>
         <body>
           <Main />

@@ -7,7 +7,8 @@ export const theme = merge(ChakraTheme, {
   styles: {
     global: {
       'html, body': {
-        fontFamily: 'Nunito'
+        fontFamily: 'Roboto',
+        bg: "brand.grey"
       },
     },
   },
@@ -22,6 +23,10 @@ export const theme = merge(ChakraTheme, {
     '4xl': '36px',
     '5xl': '48px',
     '6xl': '100px',
+    '7xl': '150px',
+    '8xl': '175px',
+    '9xl': '200px',
+    'huge': '250px'
   },
   colors: {
     brand: {
