@@ -4,11 +4,30 @@ import { merge } from "@chakra-ui/utils"
 
 // 2. Extend the theme to include custom colors, fonts, etc.
 export const theme = merge(ChakraTheme, {
+  styles: {
+    global: {
+      'html, body': {
+        fontFamily: 'Nunito'
+      },
+    },
+  },
+  fontSizes: {
+    xs: '12px',
+    sm: '14px',
+    md: '16px',
+    lg: '18px',
+    xl: '20px',
+    '2xl': '24px',
+    '3xl': '28px',
+    '4xl': '36px',
+    '5xl': '48px',
+    '6xl': '100px',
+  },
   colors: {
     brand: {
-      900: "#1a365d",
-      800: "#153e75",
-      700: "#2a69ac",
+      orange: '#f14011',
+      black:  '#000000',
+      grey:   '#dee0d4',
     },
   },
 })
