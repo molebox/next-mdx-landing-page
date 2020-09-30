@@ -13,12 +13,12 @@ const components = {
     </Text>
   ),
   h2: (props) => (
-    <Text fontSize="1xl" my={3}>
+    <Text fontSize="xl" my={3}>
       {props.children}
     </Text>
   ),
   h3: (props) => (
-    <Text fontSize="xl" my={3}>
+    <Text fontSize="md" my={3}>
       {props.children}
     </Text>
   ),
@@ -27,17 +27,16 @@ const components = {
   p: (props) => <Text my={2}>{props.children}</Text>,
   Header,
   HeaderText,
-  Section
+  Section,
+  Layout
 };
 
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme} resetCSS>
-      <Layout>
       <MDXProvider components={components}>
           <Component {...pageProps} />
       </MDXProvider>
-      </Layout>
     </ChakraProvider>
   ) 
 }

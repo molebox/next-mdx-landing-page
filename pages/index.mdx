@@ -1,10 +1,13 @@
+<Layout>
 <Header>
+
 
 <HeaderText>Bad</HeaderText>
 <HeaderText>By</HeaderText>
 <HeaderText>Design</HeaderText>
 
 </Header>
+
 
 <Section
   gridRow="2 / 4"
@@ -36,3 +39,29 @@
 >
   coming soon
 </Section>
+</Layout>
+
+
+<Section bg="brand.grey" mt={6} maxW="1000px" m="0 auto">
+And here is some normal markdown text. This is using the styling that we mapped in the components object which was passed into the MDXProvider.
+
+
+# And here is an h1
+
+## An h2
+
+### An h3
+
+And a list of stuff
+
+- MDX is great
+- Yeah, it's pretty color
+
+BTW in case you are wondering, we have used our section here as we have a layout component which sets its max width to 1000px and we made our section component so that we could use it outside of out main layout by spreading the rest of the props.
+
+But we don't have to use a component in MDX......
+
+</Section>
+
+
+We could just write here, but seeing as we don't have a global layout for this file, this text wont conform to the max width set by our layout component.
